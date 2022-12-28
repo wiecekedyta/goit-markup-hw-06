@@ -575,12 +575,15 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  width: 358px;
 }
 .newsletter-box {
   margin-left: 74px;
 }
 .newsletter-form {
   display: flex;
+  gap: 12px;
+  align-items: flex-end;
 }
 .newsletter-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -599,16 +602,33 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   box-sizing: border-box;
+  height: 50px;
+  width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 42px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  box-sizing: border-box;
+}
+.newsletter-input:focus,
+.newsletter-input:active {
+  border: 1px solid #2196f3;
+  outline: none;
+}
+.newsletter-input:focus::placeholder,
+.newsletter-input:active::placeholder {
+  color: #2196f3;
+}
+.newsletter-icon-send {
+  fill: #fff;
 }
 
 /* MODAL WINDOW*/
