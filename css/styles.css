@@ -605,6 +605,7 @@ ul {
   letter-spacing: 0.06em;
   color: #ffffff;
   background: #2196f3;
+  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   box-sizing: border-box;
@@ -616,7 +617,6 @@ ul {
   display: flex;
   align-items: center;
   gap: 24px;
-  box-sizing: border-box;
 }
 .newsletter-submit-button:hover {
   cursor: pointer;
@@ -688,4 +688,100 @@ ul {
   margin-top: 8px;
   margin-right: 8px;
   cursor: pointer;
+}
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.comment-form h2 {
+  margin-bottom: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.input-icon {
+  position: absolute;
+  visibility: visible;
+  bottom: 11px;
+  left: 12px;
+  fill: #212121;
+}
+.comment-form__label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+  position: relative;
+}
+
+.comment-form__input {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.comment-form__label input:focus,
+.comment-form__label input:active {
+  border-color: #2196f3;
+  outline: none;
+}
+.comment-form__label:active .input-icon {
+  fill: #2196f3;
+}
+.comment-form__input:focus + .input-icon {
+  fill: #2196f3;
+}
+.comment-form__input {
+  width: 448px;
+  height: 40px;
+  box-sizing: border-box;
+  margin-top: 4px;
+  padding: 12px 42px;
+}
+.comment-form__input--textarea {
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  margin-top: 4px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.comment-form__label--reg-checkbox {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.comment-form__label--reg-checkbox a {
+  color: #2196f3;
+}
+
+.comment-form-submit-button {
+  color: #ffffff;
+  background: #2196f3;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 50px;
+  width: 200px;
 }
